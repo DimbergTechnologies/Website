@@ -1,0 +1,126 @@
+body{
+	background: black;
+}
+
+#vidContainer{
+	width: auto;
+	height: auto;
+	position: relative;
+}
+
+#MV {
+	height: auto;
+	vertical-align: middle;
+	width: 100%;
+	opacity: 0.6;
+}
+
+.C1{
+	height: auto;
+	width: auto;
+}
+
+#C2{
+	width: auto;
+	position: absolute;
+	align-items: center;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#H1{
+	font-size: 4.5vw;
+	margin-top: 15%;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Helvetica;
+	font-weight: bold;
+	animation: fadein 2s;
+}
+
+#HeaderText{
+	color: #ff4c94;
+}
+
+#HeaderText:after{
+	content: "";
+	animation: HeaderText 8s linear infinite;
+}
+
+#toggleVideo{
+	position: fixed;
+	top: 25;
+	right: 25;
+}
+
+#BR{
+	padding: 0;
+	text-align: center;
+}
+
+#BROW{
+	padding: 0;
+	list-style-type: none;
+}
+
+button {
+	background: transparent;
+	border-radius:12px;
+	border:2px solid #ff4c94;
+	display:inline-block;
+	cursor:pointer;
+	color: white;
+	font-family: Helvetica;
+	font-size: 0.8vw;
+	font-weight:bold;
+	padding: 0.5% 1%;
+	text-decoration:none;
+	animation: fadein 3s;
+}
+button:hover {
+	color: white;
+	background-color: #ff4c94;
+	border-color: #ff4c94;
+}
+button:active {
+	position:relative;
+	top:2px;
+}
+
+#PPbutton{
+	background: transparent;
+	border-radius: 42;
+	border:2px solid #ff4c94;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 0.8vw;
+	font-weight:bold;
+	padding: 10 10;
+	text-decoration:none;
+}
+
+#PPbutton:hover{
+	color: white;
+	background-color: #ff4c94;
+	border-color: #ff4c94;
+}
+
+#PPbutton:active{
+	position:relative;
+	top:2px;
+}
+
+@keyframes fadein{
+	0%{opacity: 0;}
+	65%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes HeaderText{
+	0% {content:"Tomorrow's";}
+	33% {content:"Yesterday's";}
+	66% {content:"Today's";}
+	100% {content:"Tomorrow's";}
+}

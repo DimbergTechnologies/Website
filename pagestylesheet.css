@@ -1,0 +1,134 @@
+body{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+header{
+	min-width: 50%;
+	width: 100%;
+	max-height: 5%;
+	min-height: 2.5%;
+	background-color: #c33b71;
+	margin: 0;
+	padding-top: 1.1%;
+	padding-bottom: 1.1%;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+}
+
+#mainNav{
+	list-style-type: none;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 0;
+}
+
+li{
+	display: inline; 
+	font-size: 1vw;
+}
+
+li a{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.active{
+	background-color: #ff4c94;
+	box-shadow: inset 0px 0px 70px 15px rgba(195,59,113,1);
+}
+
+li a:hover{
+	background-color: #ff4c94;
+	box-shadow: inset 0px 0px 70px 15px rgba(195,59,113,1);
+}
+
+a{
+	text-decoration: none;
+	color: white;
+
+}
+
+}
+
+.C1{
+	
+}
+
+#Spacer{
+	border-bottom: 2px solid #9d9d9d;
+	margin-bottom: 7.5%;
+	animation: fadein 5s;
+}
+
+#Content{
+	margin-top: 5%;
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-bottom: 5%;
+	padding: 2.5%;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 0.9vw;
+	color: #494949;
+}
+
+h2{
+	font-size: 1.5vw;
+}
+
+#Box1{
+	margin-bottom: 5%;
+	animation: fadein 2s;
+}
+
+#Box2{
+	margin-bottom: 5%;
+	animation: fadein 3s;
+}
+
+#Box3{
+	animation: fadein 4s;	
+}
+
+#ContactButton{
+	background: white;
+	border-radius:12px;
+	border:2px solid #ff4c94;
+	display:inline-block;
+	cursor:pointer;
+	color: #ff4c94;
+	font-family: Helvetica;
+	font-size: 0.8vw;
+	font-weight:bold;
+	margin-top: 5%;
+	padding: 1% 2%;
+	text-decoration:none;
+	animation: fadein 5s;
+}
+
+#ContactButton:hover {
+	color: white;
+	background-color: #ff4c94;
+	border-color: #ff4c94;
+}
+
+#ContactButton:active {
+	position:relative;
+	top: 2px;
+}
+
+#textColor{
+	color: #c33b71;
+	font-weight: bold;
+}
+
+@keyframes fadein{
+	0%{opacity: 0;}
+	15%{opacity: 0;}
+	100%{opacity: 1;}
+}
