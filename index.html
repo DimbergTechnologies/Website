@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Plenitude Marketing</title>
+		<link rel="stylesheet" type="text/css" href="CSS/indexstylesheet.css">
+	</head>
+
+	<body>
+
+		<div class="C1">
+			<div id="vidContainer">
+				<video autoplay muted loop id="MV">
+					<source src="Resources/Videos/MainLoop2.mp4" type="video/mp4">
+				</video>
+		</div>
+			<div id="C2">
+				<div id="H1"><span id="HeaderText"></span><br>Agency.</div>
+				
+				<div id="BR">
+					<ul id="BROW">
+					<button onclick="onClickCM()">Creator Marketing</button>
+						<script>
+							function onClickCM(){
+								window.location.href = "creatormarketing.html"
+							}
+						</script>
+					<button onclick="onClickVM()">Viral Marketing</button>
+						<script>
+							function onClickVM(){
+								window.location.href = "viralmarketing.html"
+							}
+						</script>
+					<button onclick="onClickSpons()">Sponsorships</button>
+						<script>
+							function onClickSpons(){
+								window.location.href = "sponsorships.html"
+							}
+						</script>
+					</ul>
+				</div>
+			</div>
+			<div id="toggleVideo">
+				<button id="PPbutton" onclick="toggle()">||</button>
+					<script>
+						var MV = document.getElementById("MV")
+						var isPlaying = true;
+		
+						function toggle(){
+							if(isPlaying == true) {
+								MV.pause();
+								isPlaying = false;
+							} else if (isPlaying == false) {
+								MV.play();
+								isPlaying = true;
+							}
+						};
+				</script>
+			</div>
+		</div>
+	</body>
+
+</html>
